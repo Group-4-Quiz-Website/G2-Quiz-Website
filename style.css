@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+main {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #c8eee6;
+  padding: 40px 0;
+  border-radius: 10px;
+}
+.container .resultText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .resultText i {
+  font-size: 70px;
+  color: #07b38c;
+  background-color: white;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+.container .resultText p {
+  margin-bottom: 5px;
+  color: #07b38c;
+}
+.container .resultText #stautsText1,
+.container .resultText #stautsText2 {
+  font-size: 40px;
+}
+.container .resultText #percantage {
+  width: 60px;
+  height: 60px;
+  padding: 20px;
+  border: 2px solid #07b38c;
+  font-weight: bold;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.container .result {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 30px;
+  transition: 0.3s;
+}
+
+.container .result div{
+    width: 200px;
+    padding: 5px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    text-align: center;
+    /* font-weight: bold; */
+}
+@media (max-width:840px){
+  .container .result{
+    flex-direction: column;
+    align-items: center;
+  }  
+  .container .result div{
+    margin-top: 10px;
+  }
+}
+.container .result div:nth-child(1){
+    background-color: white;
+    border-color: #07b38c;
+    color: #07b38c;
+}
+.container .result div:nth-child(2){
+    background-color: #07b38c;
+    color: white;
+    border: none;
+}
+.container .result div:nth-child(3){
+    background-color: #F52D2D;
+    color: white;
+}
+
+#butReturn{
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #07b38c;
+    color: white;
+    margin: 30px auto;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#butReturn:hover{
+    background-color:#079c79;
+    transform: translateY(-5px);
+}
+.wrongAns{
+    margin-top: 20px;
+    border: 2px dashed #ff7878;
+    border-radius: 10px;
+}
+.wrongAns .card{
+    padding: 40px;
+    background-color: #FFC4C4;
+    margin: 10px;
+    border-radius: 5px;
+}
+.wrongAns .card h3{
+    padding: 10px;
+}
+.wrongAns .card .question{
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.wrongAns .card ul{
+    margin-top: 10px;
+    padding: 10px;
+}
+.wrongAns .card ul li{
+    width: 40%;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px ;
+    border-radius: 5px;
+    position: relative;
+
+}
+@media (max-width:840px){
+    .wrongAns .card ul li{
+        width: 200px;
+    }
+}
+.wrongAns .card ul li::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #ddd;
+    left: -35px;
+    top: 12px;
+}
+.wrongAns .card ul .wrong{
+    background-color: rgb(230, 27, 27); 
+    color: white;
+}
+.wrongAns .card ul .wrong::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(230, 27, 27);
+    border: 1px solid #ddd;
+    left: -35px;
+    top: 12px;
+}
+    
+
+.wrongAns .card ul .correct{
+    background-color: green;
+    color: white;
+}
+.wrongAns .card ul .correct::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: green;
+    border: 1px solid #ddd;
+    left: -35px;
+    top: 12px;
+}
