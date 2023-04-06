@@ -1,0 +1,23 @@
+#navBar{
+display: block;
+width: 100%;
+padding-left: 80%;
+}
+
+.hero{
+height: 80vh;
+background-image: url(./img/istockphoto-1364994903-640x640.jpg);
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+font-size: larger;
+}
+
+.hero h2{
+    font-size: 4rem;
+}
+
+.hero h3{
+    font-size: 2rem;
+}
