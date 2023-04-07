@@ -15,7 +15,7 @@ main {
   display: flex;
   flex-direction: column;
 }
-.container {
+.cont {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,29 +24,29 @@ main {
   padding: 40px 0;
   border-radius: 10px;
 }
-.container .resultText {
+.cont .resultText {
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.container .resultText i {
+.cont .resultText i {
   font-size: 70px;
   color: #07b38c;
   background-color: white;
   border-radius: 50%;
   margin: 20px 0;
 }
-.container .resultText p {
+.cont .resultText p {
   margin-bottom: 5px;
   color: #07b38c;
 }
-.container .resultText #stautsText1,
-.container .resultText #stautsText2 {
+.cont .resultText #stautsText1,
+.cont .resultText #stautsText2 {
   font-size: 40px;
 }
-.container .resultText #percantage {
+.cont .resultText #percantage {
   width: 60px;
   height: 60px;
   padding: 20px;
@@ -59,7 +59,7 @@ main {
   justify-content: center;
   margin-top: 10px;
 }
-.container .result {
+.cont .result {
   display: flex;
   justify-content: space-between;
   width: 40%;
@@ -67,7 +67,7 @@ main {
   transition: 0.3s;
 }
 
-.container .result div {
+.cont .result div {
   width: 200px;
   padding: 5px 10px;
   border: 1px solid;
@@ -76,15 +76,15 @@ main {
   /* font-weight: bold; */
 }
 @media (max-width: 1094px) {
-  .container .result {
+  .cont .result {
     flex-direction: column;
     align-items: center;
   }
-  .container .result div {
+  .cont .result div {
     margin-top: 10px;
   }
 }
-.container .result div:nth-child(1) {
+.cont .result div:nth-child(1) {
     background-color: #07b38c;
     color: white;
     border: none;
@@ -94,7 +94,7 @@ main {
   color: white;
   border: none;
 } */
-.container .result div:nth-child(2) {
+.cont .result div:nth-child(2) {
   background-color: #f52d2d;
   color: white;
 }
