@@ -1,6 +1,4 @@
 
-alert("hello")
-
 let login1=document.getElementById("login1")
 login1.addEventListener("submit",(event)=>{
 event.preventDefault();
