@@ -77,3 +77,10 @@
   }
  
 
+  .btn-secondary {
+   
+  
+    --bs-btn-hover-color: #898282;
+ }
+ .nav-link {
+  --bs-hover-color:white;}
