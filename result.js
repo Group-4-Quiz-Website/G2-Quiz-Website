@@ -18,9 +18,9 @@ let arra4;
 let arrCorrect;
 let arrq;
 
-let qtype = sessionStorage.getItem("info").position;
+let qtype = JSON.parse(sessionStorage.getItem("info")).position;
 
-if (qtype == "html") {
+if (qtype == "HTML") {
   arrq = [
     "The <title> element must be located inside",
     "Which tag is used to create a hyperlink?",
@@ -84,7 +84,7 @@ if (qtype == "html") {
   ];
   arrCorrect = [1, 1, 3, 2, 2, 3, 3, 4, 1, 2];
 }
-if (qtype == "css") {
+if (qtype == "CSS") {
   arrq = [
     "Which of the following is NOT a CSS box model property",
     "Which of the following selectors has the highest specificity?",
@@ -145,9 +145,9 @@ if (qtype == "css") {
     " vw",
     "fixed",
   ];
-  arrCorrect = [4, 3, 4, 1, 1, 1, 3, 4, 3, 4];
+  arrCorrect = [4, 3, 4, 4, 1, 1, 3, 4, 3, 4];
 }
-if (qtype == "js") {
+if (qtype == "JavaScript") {
   arrq = [
     " What is JavaScript?",
     "Which of the following is correct about JavaScript?",
@@ -221,7 +221,7 @@ function createCard(arr) {
         item3.className = "wrong";
         break;
       case 4:
-        item3.className = "wrong";
+        item4.className = "wrong";
         break;
     }
     switch (arrCorrect[arr[x]]) {
@@ -235,7 +235,7 @@ function createCard(arr) {
         item3.className = "correct";
         break;
       case 4:
-        item3.className = "correct";
+        item4.className = "correct";
         break;
     }
 
@@ -269,3 +269,15 @@ if (num > 50) {
 }
 
 createCard(arrUnCorrect);
+
+function signout(){
+    
+  sessionStorage.clear();
+  window.location.href="./index.html";
+}
+
+let Info= JSON.parse( sessionStorage.getItem("info"));
+
+let welcomeMessage=document.getElementById("welcomUser").innerHTML=`Welcome ${Info.username}`;
+console.log( welcomeMessage);
+

@@ -8,6 +8,8 @@ var arrCorrect=[]
 var arrUnCorrectA =[]
 var arrCorrectA =[]
 
+
+
 var mins=5;
 var secs=mins*60;
 function countdown() {
@@ -67,9 +69,9 @@ function getseconds() {
     return  sec;
 }
 
-let qtype = (sessionStorage.getItem("info")).position
+let qtype =JSON.parse(sessionStorage.getItem("info")).position
 
-if(qtype =="html"){
+if(qtype =="HTML"){
 arrq=["The <title> element must be located inside","Which tag is used to create a hyperlink?","What is the HTML element used to display an image?","Which is the correct HTML tag for a new paragraph?","What is the HTML form input used to send information of the form to the server?","How to write an HTML Comment ?","Which of the following answer options is not an HTML attribute?","What is the HTML attribute used to reference the location of an image inside the <img> tag?","Which of the following table tags is used to create a table data cell?","Which element is not empty?"]
 
 arra1=["the <head> element","<a>","<image>","<paragraph>","<input type='server'>","// This is an HTML comment","alt","href","<td>","<br>"]
@@ -78,16 +80,16 @@ arra3=["the <form> element","<dl>","<img>","<pre>","<input type='send'>","<!-- T
 arra4=["the <div> element","<link>","<pic>","<article>","<input type='mail'>","< This is an HTML comment >","id","src","<table>","<hr>"]
 arrCorrect =[1,1,3,2,2,3,3,4,1,2]
 }
-if(qtype =="css"){
+if(qtype =="CSS"){
 arrq=["Which of the following is NOT a CSS box model property","Which of the following selectors has the highest specificity?","Which property can be used to vertically center an element within its parent container?","Which of the following values can be used with the display property to hide an element from the page but keep its space ","Which CSS property can be used to make text italicized?","Which CSS property can be used to specify the spacing between lines of text?","Which CSS property can be used to create a shadow effect around an element?","Which of the following is NOT a CSS layout mode?","Which of the following CSS units is NOT relative?","Which of the following CSS values can be used to make an element sticky, so that it remains fixed in its position even when the page is scrolled?"]
 arra1=["margin"," element selector","margin-top","none","font-style"," line-height","shadow"," block","em"," static"]
 arra2=["padding","class selector","margin-bottom","block","font-size"," text-align","text-shadow","inline"," rem","relative"]
 arra3=["border","ID selector","margin-left","inline","font-weight"," letter-spacing","box-shadow"," flex"," px","absolute"]
 arra4=["text-align","universal selector","none of the above","hidden","font-color"," word-spacing","outline"," margin"," vw","fixed"]
-arrCorrect =[4,3,4,1,1,1,3,4,3,4]
+arrCorrect =[4,3,4,4,1,1,3,4,3,4]
 
 }
-if(qtype =="js"){
+if(qtype =="JavaScript"){
 arrq = [" What is JavaScript?",
     "Which of the following is correct about JavaScript?",
     "Arrays in JavaScript are defined by which of the following statements?",
@@ -219,3 +221,15 @@ function correct(){
         arrCorrectA.push(questionNumber);
     }
 }
+
+function signout(){
+    
+    sessionStorage.clear();
+    window.location.href="./index.html";
+}
+
+let Info= JSON.parse( sessionStorage.getItem("info"));
+
+let welcomeMessage=document.getElementById("welcomUser").innerHTML=`Welcome ${Info.username}`;
+console.log( welcomeMessage);
+

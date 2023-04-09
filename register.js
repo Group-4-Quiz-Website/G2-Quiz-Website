@@ -10,7 +10,7 @@ const passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9]).{8,}$/;
 const emailRegex = /^\S+@\S+\.\S+$/; 
 
 // Set a flag to keep track of whether an option has been selected from the dropdown menu
-let dropdownSelected = false;
+//let dropdownSelected = false;
 
 
 form.addEventListener("submit", (event)=> {
@@ -28,7 +28,7 @@ form.addEventListener("submit", (event)=> {
         position: positionb.value
     };
     localStorage.setItem("formData", JSON.stringify(formData));
-    sessionStorage.setItem("formData", JSON.stringify(formData));
+    sessionStorage.setItem("info", JSON.stringify(formData));
     window.location.href = './homePageUser.html';
 
     // Show welcome message
