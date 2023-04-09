@@ -81,7 +81,7 @@
   }
 
   .uppersection{
-    background-color: #07B38C;
+    background-color: #00404e;
     padding-left: 4rem;
     padding-right: 4rem;
     padding-bottom: 2rem;
@@ -92,28 +92,40 @@
     display: flex;
     align-self: flex-start;
     background-color: #D1D1D1;
-    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     color: black;
-    width: 11rem;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     position: relative;
     bottom: -1rem;
+    border: 2px #00404e solid;
+
+  }
+  .timercon{
+    position: sticky;
+    top: 0px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 2rem;
+    background-color: #ebe9e9;
+    z-index: 100;
+    box-shadow: 10px 10px 15px #00404e93;
+    display: flex;
+    flex-direction: row;
+    border: 7px #00404e solid;
 
   }
   .timer{
-    position: sticky;
-    top: 0px;
     color: black;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     font-weight: bolder;
     border-radius: 2rem;
     font-size: 50px;
-    background-color: white;
-    z-index: 100;
-    box-shadow: 5px 5px 12px rgba(44, 75, 53, 0.534);
-
+    background-color: #ebe9e9;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
 
@@ -134,7 +146,7 @@
   }
   .labelstyle{
     min-width: 18rem;
-    background-color: #D1D1D1;
+    background-color: #d1d1d1;
     margin: 1rem;
     border-radius:1rem;
     display: flex;
@@ -147,8 +159,8 @@
     
   }
   .labelstyle:hover{
-    transition: 1s;
-    background-color: #f4fc82;
+    transition: 0.2s;
+    background-color: #f5f3b4;
 
 
   }
@@ -170,8 +182,8 @@
 form input[type='button']{
     width: 10rem;
     height: 3rem;
-    color: black;
-    margin-top: 3rem;
+    color: white;
+    margin-top: 1rem;
     display: flex;
     align-self: self-end;
     justify-content: center;
@@ -179,13 +191,19 @@ form input[type='button']{
     border-color: #D1D1D1;
     font-size: x-large;
     font-weight: bold;
-    background-color:#D1D1D1 ;
+    background-color:#00404e ;
+    margin-bottom: 5rem;
   }
 
   form input[type='button']:hover{
-    transition: 1s;
-    color: rgb(255, 255, 255);
-    background-color:#07B38C ;
+    transition: 0.5s;
+    /* color: rgb(255, 255, 255); */
+    background-color:#01718a ;
+  }
+
+  #Errormessage{
+    color: rgb(207, 68, 68);
+    visibility: hidden;
   }
 
   @media (min-width: 500px) {
