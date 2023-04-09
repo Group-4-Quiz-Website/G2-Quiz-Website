@@ -1,6 +1,4 @@
-
-  
-  .about-section {
+.about-section {
     padding: 50px;
     text-align:left;
     background-color: #ffffff;
@@ -8,9 +6,6 @@
   }
   @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 
-  
-  
-  
   #intro1 {
     
     transform: scale(0.94);
@@ -75,12 +70,8 @@
       background-position: 500%;
     }
   }
- 
-
   .btn-secondary {
-   
-  
-    --bs-btn-hover-color: #898282;
+ --bs-btn-hover-color: #898282;
  }
  .nav-link {
   --bs-hover-color:white;}
