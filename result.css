@@ -108,7 +108,8 @@ main {
   width: fit-content;
   padding: 5px 10px;
   border-radius: 5px;
-  background-color: #07b38c;
+  background-color: #00404e;
+  ;
   color: white;
   margin: 30px auto;
   cursor: pointer;
@@ -116,7 +117,8 @@ main {
   text-decoration: none;
 }
 #linkReturn:hover {
-  background-color: #079c79;
+  background-color: #025061'
+  ;
   transform: translateY(-5px);
 }
 .wrongAns {
@@ -230,11 +232,12 @@ main {
   left: -35px;
   top: 12px;
 }
-footer .btn-link{
+
+/* footer .btn-link{
   transition: 0.3s;
   border: .5px solid white;
 }
 footer .btn-link:hover{
   transform: translateY(-5px);
   /* opacity: 0.8; */
-}
+/* }  */
