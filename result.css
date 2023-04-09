@@ -104,7 +104,7 @@ main {
   color: white;
 }
 
-#butReturn {
+#linkReturn {
   width: fit-content;
   padding: 5px 10px;
   border-radius: 5px;
@@ -113,8 +113,9 @@ main {
   margin: 30px auto;
   cursor: pointer;
   transition: 0.3s;
+  text-decoration: none;
 }
-#butReturn:hover {
+#linkReturn:hover {
   background-color: #079c79;
   transform: translateY(-5px);
 }
@@ -175,15 +176,18 @@ main {
     font-family: 'Font Awesome 5 Free';
   content: "\f057";
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background-color: rgb(230, 27, 27);
   border: 1px solid #ddd;
   left: -35px;
   top: 12px;
-  text-align: center;
-  line-height: 1.3;
+  /* text-align: center; */
+  /* line-height: 1.3; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrongAns .card ul .correct {
@@ -194,13 +198,43 @@ main {
     font-family: 'Font Awesome 5 Free';
     content: "\f058";
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background-color: rgb(6, 184, 6);
   border: 1px solid #ddd;
+  /* padding: 2px; */
   left: -35px;
   top: 12px;
-  text-align: center;
-  line-height: 1.3;
+  /* text-align: center; */
+  /* line-height: 1.3; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrongAns .card ul .dis{
+  background-color: #EEE;
+  opacity: 0.7;
+  border:1px solid #aaa;
+  
+}
+.wrongAns .card ul .dis::before{
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #eee;
+  border:1px solid #aaa;
+  left: -35px;
+  top: 12px;
+}
+footer .btn-link{
+  transition: 0.3s;
+  border: .5px solid white;
+}
+footer .btn-link:hover{
+  transform: translateY(-5px);
+  /* opacity: 0.8; */
 }
