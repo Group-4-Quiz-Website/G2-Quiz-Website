@@ -13,7 +13,7 @@ const emailRegex = /^\S+@\S+\.\S+$/;
 let dropdownSelected = false;
 
 
-form.addEventListener("submit", ()=> {
+form.addEventListener("submit", (event)=> {
     // Validate form fields
     if (!isFormValid()) {
         event.preventDefault();
@@ -28,6 +28,8 @@ form.addEventListener("submit", ()=> {
         position: positionb.value
     };
     localStorage.setItem("formData", JSON.stringify(formData));
+    sessionStorage.setItem("formData", JSON.stringify(formData));
+    window.location.href = './homePageUser.html';
 
     // Show welcome message
     alert("Welcome " + formData.username);
