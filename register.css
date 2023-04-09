@@ -39,7 +39,7 @@
 }
 
 .register-photo form .form-control {
-    border: 1px solid #07B38C;
+    border: 1px solid #00404e;
     box-shadow: none;
     outline: 0;
     color: inherit;
@@ -47,8 +47,8 @@
     height: 50px
 }
 
-.btn-primaryposition {
-    border: 1px solid #07B38C;
+.btn-primary1 {
+    border: 1px solid #00404e;
     box-shadow: none;
     outline: 0;
     color: inherit;
@@ -61,21 +61,10 @@
     line-height: 20px
 }
 
-.register-photo form .btn-primary {
-
-    background: #07b38c;
-    border: none;
-    border-radius: 4px;
-    padding: 11px;
-    box-shadow: none;
-    margin-top: 35px;
-    text-shadow: none;
-    outline: 0 !important
-}
 
 .register-photo form .btn-primarysignup {
     color: #fff;
-    background: #07b38c;
+    background: #00404e;
     border: none;
     border-radius: 4px;
     padding: 11px;
@@ -85,21 +74,11 @@
     outline: 0 !important
 }
 
-.register-photo form .btn-primary:active,
-.register-photo form .btn-primary:hover {
-    background: #106854
-}
-
-
-
-.register-photo form .btn-primary:active {
-    transform: translateY(1px)
-}
 
 
 .register-photo form .btn-primarysignup:active,
 .register-photo form .btn-primarysignup:hover {
-    background: #106854
+    background: #077993
 }
 
 
