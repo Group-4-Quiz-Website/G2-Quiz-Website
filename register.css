@@ -7,7 +7,7 @@
     display: table-cell;
     border-radius: 7%;
     width: auto;
-    background: url(/img/image.png) 0 0/cover
+    background: url(./img/image.png) 0 0/cover
 }
 
 .register-photo .form-container {
