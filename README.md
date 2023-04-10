@@ -12,7 +12,7 @@ At Jobs Quizzes, we believe that knowledge is power, and we're committed to help
 + Mr. Amro
 + Mr. Abdulrahman
 + Ms. Wesam
-+ Ms. Farah
++ Ms. Farah Almasri
 + Mr. Mohammad
 + Mr. Issa
 
