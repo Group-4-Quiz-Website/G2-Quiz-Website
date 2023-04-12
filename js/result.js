@@ -273,7 +273,7 @@ createCard(arrUnCorrect);
 function signout(){
     
   sessionStorage.clear();
-  window.location.href="./index.html";
+  window.location.href="../index.html";
 }
 
 let Info= JSON.parse( sessionStorage.getItem("info"));

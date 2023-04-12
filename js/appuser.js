@@ -10,6 +10,6 @@ console.log(welcomeMessage2);
 function signout() {
 
         sessionStorage.clear();
-        window.location.href = "./index.html";;
+        window.location.href = "../index.html";;
 }
 
