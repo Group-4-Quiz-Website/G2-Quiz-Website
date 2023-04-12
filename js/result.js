@@ -246,7 +246,7 @@ function createCard(arr) {
 }
 
 let num = (arrCorrectAns.length / arrq.length) * 100;
-if (num > 50) {
+if (num >= 50) {
   resultBox.classList.add("pass");
   iconResult.classList.add("fa-face-smile");
   iconResult.style.color = "#07b38c";
