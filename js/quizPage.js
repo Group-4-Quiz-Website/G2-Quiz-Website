@@ -173,10 +173,11 @@ function next(){
         return false
     }
     document.getElementById("Errormessage").style.visibility = "hidden"
-    ans1L.style.backgroundColor = "#d1d1d1";
-    ans2L.style.backgroundColor = "#d1d1d1";
-    ans3L.style.backgroundColor = "#d1d1d1";
-    ans4L.style.backgroundColor = "#d1d1d1";
+    ans1L.style.borderColor = "#d1d1d1";
+    ans2L.style.borderColor = "#d1d1d1";
+    ans3L.style.borderColor = "#d1d1d1";
+    ans4L.style.borderColor = "#d1d1d1";
+
 
     correct()
 
